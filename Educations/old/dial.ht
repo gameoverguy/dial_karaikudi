@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dial.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 bac">
+                
+                <p class="p1">Our work</p>
+                <p class="p2" > Emerging from the heartland of Tamil Nadu, Dial Karaikudi (est. 2021) is your reliable <br>B2B source for high-quality grains and spices. We connect<br> businesses with the pure flavors of Sivaganga, offering a diverse range of products<br> renowned for their freshness and authenticity. Uncompromising Quality: We<br> collaborate with trusted, small-scale farmers and processors, ensuring<br> sustainable practices and superior produce. Stringent quality checks<br> guarantee our grains and spices meet the highest standards for purity and consistency.  </p>      
+                <div class="pho">
+                    <img src="dial karaikudi logo png.png" alt="" class="pic"></div> 
+                    <br>
+                <p class="p1"> our Quality</p>          
+                <p class="p2" > 
+                    
+                    
+                    We collaborate with trusted, small-scale farmers and processors, ensuring sustainable<br> practices and superior produce.
+                    Stringent quality checks guarantee our grains<br> and spices meet the highest standards for purity and consistency.<br>
+                    Traceability from farm to fork<br> strengthens your supply chain and fosters ethical sourcing.</p>
+                
+           <br>
+           <br>
+           <p class="p1"> why choose </p>
+           <p class="p2">
+            
+            Marz Choose Dial Karaikudi and:
+
+            Enhance your product offerings with premium grains and spices that add value and authenticity.<br>
+            Build trust with your customers through transparency and commitment to ethical sourcing.<br>
+            Streamline your supply chain with a reliable partner dedicated to quality and consistency.<br>
+            Unlock the taste of tradition. Connect with Dial Karaikudi and elevate your business.</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
