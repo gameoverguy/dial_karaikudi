@@ -7,16 +7,6 @@
     font-size: 10px;
 }
 
-
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-}
-
 header {
     display: flex;
     flex-direction: column;
@@ -24,9 +14,6 @@ header {
     width: 100%;
     height: fit-content;
 }
-
-
-/* Nav Bar Section */
 
 #top_panel {
     position: fixed;
@@ -38,14 +25,32 @@ header {
     transition: background-color 0.3s ease;
     background-color: rgba(0, 0, 0, 0.062);
     z-index: 1000;
-    color: rgb(201, 0, 174);
 }
 
+.headerPanel {
+    display: flex;
+    height: fit-content;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Nav Bar Section */
+
+
+
 #top_panel.scrolled {
-    background-color: #ff8635;
+    background-color: #ffffff;
     box-shadow: 0px 4px 7px #00000071;
     transition: background-color 0.3s ease;
-    color: rgb(201, 74, 0);
+    color: rgb(99, 39, 0);
 }
 
 .default_img img {
@@ -81,18 +86,7 @@ header {
     color: rgb(255, 255, 255);
 }
 
-.neonText {
-    color: #fff;
-    text-shadow:
-        0 0 7px #793000,
-        0 0 10px #793000,
-        0 0 21px #793000,
-        0 0 42px rgb(255, 136, 0),
-        0 0 82px rgb(255, 136, 0),
-        0 0 92px rgb(255, 136, 0),
-        0 0 102px rgb(255, 136, 0),
-        0 0 151px rgb(255, 136, 0);
-}
+
 
 
 #navbar_button:hover {
@@ -130,12 +124,6 @@ header {
     height: 60px;
 }
 
-
-
-.top_panel_bg {
-    display: flex;
-    height: fit-content;
-}
 
 .top_panel_bg-left {
     display: flex;
