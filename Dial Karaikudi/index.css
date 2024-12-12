@@ -7,6 +7,17 @@
 
 .wrapper {
     width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
 }
 
 /* Top Bar */
@@ -29,11 +40,26 @@
     transition: background-color 0.3s ease;
 }
 
+.default_img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 72px;
+    width: 64px;
+    background-color: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .navbar {
+    display: flex;
+    flex-wrap: nowrap;
     background-color: none;
     height: auto;
     width: fit-content;
 }
+
 
 .navbar a {
     padding: 12px;
@@ -45,6 +71,7 @@
     background-color: #0000001a;
     border-radius: 5px;
 }
+
 
 .navbar a.scrolled {
     background-color: #058d00;
@@ -60,8 +87,29 @@
 }
 
 @media screen and (max-width: 500px) {
+
+    #top_panel {
+        position: relative;
+        width: 100%;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
     .navbar a {
-        display: block;
+        width: 100%;
+    }
+
+
+    #top_panel {
+        height: auto;
+    }
+
+    .default_img {
+        display: none;
     }
 }
 
@@ -99,17 +147,7 @@ body {
 
 
 
-.default_img {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 72px;
-    width: 64px;
-    background-color: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 
 
 /* Nav Bar Section */
@@ -178,13 +216,13 @@ body {
     align-items: center;
     justify-content: space-evenly;
     border: none;
-    max-width: 300px;
+    max-width: fit-content;
     height: auto;
     border-radius: 50px;
     background-color: rgb(255, 235, 218);
     color: rgb(129, 84, 0);
     padding: 30px 30px 30px 30px;
-    margin: 25px;
+    margin: 5px;
 }
 
 .service-item-image {
@@ -197,7 +235,12 @@ body {
 }
 
 .section-01 {
+
     background-color: rgb(240, 184, 100);
+}
+
+.services-row-01 {
+    max-width: 100%;
 }
 
 .section-02 {
