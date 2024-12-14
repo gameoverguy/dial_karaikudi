@@ -34,17 +34,6 @@ footer {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 .wrapper {
     width: 80%;
     display: flex;
@@ -87,29 +76,30 @@ footer {
     justify-content: center;
 }
 
+
 .navbar {
+    position: absolute;
+    top:72px;
+    left: 0;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     background-color: none;
     height: auto;
-    width: fit-content;
+    width: 100%;
 }
 
-a {
-    text-decoration: none;
+.navbar.showMenu{
+    display: none;
 }
-
-
 
 .navbar a {
+    width: 100%;
     padding: 12px;
-    margin: 0 5px 0 5px;
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 17px;
     font-weight: bold;
     background-color: #0000001a;
-    border-radius: 5px;
 }
 
 
@@ -126,19 +116,37 @@ a {
     height: fit-content;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
 
-    .navbar{
-        flex-wrap: nowrap;
+    .navbar {
         position: absolute;
-    }
-
-    .nav_a{
-        
+        top:72px;
+        left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: none;
+        height: auto;
         width: 100%;
     }
 
+    .navbar a {
+        width: 100%;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: bold;
+        background-color: #0000001a;
+
+    }
+
+    .nav_a{
+        display: block;
+        width: 100%;
+    }
+
+
 }
+
 
 /* Top Bar */
 
