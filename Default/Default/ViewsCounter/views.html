@@ -1,40 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <style>
-
-    </style>
+    <title>Responsive Layout</title>
+    <link rel="stylesheet" href="views.css">
 </head>
+
 <body>
-    <p><button onclick="clearCounter()" type="button">Clear Counter</button></p>
-
-    <p>Number of clicks:</p>
-    <p id="views"></p>
-
-    <script>
-
-        window.onload = viewsCounter;
-        //clickCounter();
-
-        function viewsCounter() {
-            document.getElementById("views").innerHTML = localStorage.clickcount;
-            if (localStorage.clickcount) {
-                localStorage.clickcount = Number(localStorage.clickcount)+1;
-            } else {
-                localStorage.clickcount = 1;
-            }
-            document.getElementById("views").innerHTML = localStorage.clickcount;
-        }
-
-        function clearCounter() {
-            localStorage.clear();
-            document.getElementById("views").innerHTML = 0;
-        }
-
-    </script>
+    <div class="container">
+        <div class="text-section">
+            <h1>Your Text Here</h1>
+            <p>Add descriptive content or any other text here.</p>
+        </div>
+        <div class="photo-section">
+            <img src="your-image.jpg" alt="A descriptive alt text">
+        </div>
+    </div>
 </body>
+
 </html>
