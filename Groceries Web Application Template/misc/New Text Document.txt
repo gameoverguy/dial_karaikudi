@@ -1,0 +1,5 @@
+Products Page
+
+sticky Nav bar
+logo, category dropdown, search, cart
+
