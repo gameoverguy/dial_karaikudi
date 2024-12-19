@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,29 +8,44 @@
 
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
 
-    <h1>List of Students</h1>
+    <main>
 
-    <input type="text" id="studentinput"  placeholder="Student Name">
-    <button id="addstudent" onclick="addstudent()">Add Student</button><br>
-    <br>
-    <br>
-    <button id="bulkadd" onclick="addInBulk()">Add in Bulk</button>
+        <div class="box1">
+            <h1>List of Students</h1>
 
-    <ol class="studentlist">
-        <li>Karthick</li>
-        <li>Arun</li>
-    </ol>
+            <div>
+                <input type="text" id="studentinput" placeholder="Enter Student Name">
+                <button id="addstudent" onclick="addstudent()">Add Student</button>
+                <button id="bulkadd" onclick="addInBulk()">Add in Bulk</button>
+            </div>
 
-    <button id="find" onclick="">find</button>
-    <input id="findvalue" type="text">
+            <div>
+                <input id="findvalue" type="text" placeholder="Enter search text">
+                <button id="find" onclick="findstudent()">find</button>
+            </div>
 
-    <div class="update">
-        <input id="showstudent" type="text" disabled>
-        <button onclick="" id="delete">Delete</button>
-    </div>
+            <div>
+                <input id="showstudent" type="text" disabled>
+                <button onclick="deletestudent()" id="delete">Delete</button>
+            </div>
+        </div>
+
+
+        <ol class="studentlist">
+            <li>Karthick</li>
+            <li>Arun</li>
+            <li>Deva</li>
+
+        </ol>
+
+    </main>
+
+
 
     <script src="index.js"></script>
 </body>
+
 </html>
