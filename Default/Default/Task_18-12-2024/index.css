@@ -16,20 +16,28 @@ button {
     height: 36px;
     font-size: small;
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 5px;
     border: none;
-    background-color: rgb(0, 122, 179);
+    background-color: rgb(255, 102, 0);
     color: white;
+    margin: 5px;
+}
+
+button:hover{
+    background-color: green;
+    scale:1.05;
 }
 
 input {
     width: 240px;
     height: 30px;
+    outline: none;
 }
 
-ol {
-    margin-left: 50px;
+ol{
+    margin-right: 300px;
 }
+
 
 li {
     padding: 5px;
@@ -37,11 +45,19 @@ li {
 }
 
 main {
-    height: 400px;
+    height: auto;
+    gap: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     width: 50%;
+    border: none;
+    width: 600px;
+    padding: 50px 20px 50px 20px;
+    border-radius: 30px;
+    background-color: rgb(209, 243, 243);
+    box-shadow: 5px 6px 7px 8px rgba(0, 0, 0, 0.200) inset, -5px 6px 7px 8px rgba(0, 0, 0, 0.200) inset;
 }
 
 .box1 {
@@ -53,4 +69,14 @@ main {
 .selected {
     background-color: rgb(255, 0, 0);
     color: white;
+}
+
+
+.labelred{
+    color: red;
+}
+
+
+.labelgreen{
+    color:green;
 }
