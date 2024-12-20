@@ -33,6 +33,7 @@ input {
     height: 30px;
     outline: none;
     border: none;
+    background-color: white;
 }
 
 ol {
