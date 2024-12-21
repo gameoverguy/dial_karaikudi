@@ -76,7 +76,7 @@ footer {
     flex-grow: 1;
     gap: 20px;
     justify-content: center;
-    background-color: none;
+    background-color: transparent;
     height: auto;
 }
 
@@ -114,7 +114,7 @@ footer {
 }
 
 .headerPanel {
-    padding-right: 100px;
+    /* padding-right: 100px; */
     display: flex;
     gap: 80px;
     justify-content: center;
@@ -138,7 +138,6 @@ footer {
     --leftboxcolor: rgba(0, 0, 0, 0.158);
     box-shadow: 5px 0px 6px 8px var(--leftboxcolor), -5px 0px 6px 8px var(--leftboxcolor);
     border-radius: 10px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -151,14 +150,13 @@ footer {
 
 .headerPanel_right_container {
     height: 80vh;
-    width: fit-content;
+    width: 60%;
 }
 
 .headerPanel_right_container img {
     object-fit: contain;
     width: 100%;
     height: 100%;
-    box-shadow: 6px 0 7px 8px rgba(0, 0, 0, 0.450), -6px 0 7px 8px rgba(0, 0, 0, 0.450);
 }
 
 .top_panel_bg_left_box p {
@@ -194,15 +192,20 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    gap: 20px;
     aspect-ratio: 1 / 1;
-    width: 20%;
-    height: 40%;
+    width: 10%;
+    height: 5%;
     border: none;
+    gap: 30px;
     border-radius: 5px;
-    padding: 20px 40px 20px 40px;
+    padding: 20px 20px 20px 20px;
     --leftboxcolor: rgba(0, 0, 0, 0.158);
-    box-shadow: 5px 0px 6px 8px var(--leftboxcolor), -5px 0px 6px 8px var(--leftboxcolor);
+    box-shadow: 4px 4px 4px 4px var(--leftboxcolor), -4px 4px 4px 4px var(--leftboxcolor);
+}
+
+.service-item:hover{
+    transform: scale(1.1);
+    background-color: rgb(237, 252, 255);
 }
 
 .service_item_child-01{
@@ -211,7 +214,12 @@ footer {
     align-items: center;
     text-align: center;
     width: 100%;
-    height: 30%;
+    height: 50%;
+    
+}
+
+.service_item_child-01 img{
+    object-fit: contain;
 }
 
 .service_item_child-02{
@@ -221,6 +229,9 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #474747;
 }
 
 .service_item_child-03{
@@ -230,18 +241,20 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-size: 0.5rem;
 }
 
 
 .section-01 {
-    padding: 20px;
+    position: relative;
+    padding: 60px 20px 20px 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     align-content: center;
     height: auto;
-    gap: 40px;
+    gap: 20px;
     background-color: rgb(255, 255, 255);
 }
 
@@ -272,7 +285,7 @@ footer {
         display: none;
         flex-wrap: wrap;
         gap: 0;
-        background-color: none;
+        background-color: transparent;
         height: auto;
         width: 100%;
     }
@@ -346,19 +359,25 @@ footer {
 
     .section-01 {
         display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
         gap: 20px;
-
         height: auto;
         padding: 20px;
         background-color: rgb(255, 255, 255);
+        padding-top: 80px;
+
     }
 
     .service-item {
-        aspect-ratio:none;
-        width: 100%;
-        justify-content: center;
+        width: 40%;
+        height: 60px;
+    }
+
+    .service_item_child-01{
+        display: none;
     }
 
 

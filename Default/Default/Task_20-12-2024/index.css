@@ -1,0 +1,24 @@
+.time{
+    font-size: 54px;
+    color: rgb(248, 70, 0);
+}
+
+.time.modified{
+    font-size: 72px;
+    color: green;
+}
+
+.btn{
+    width: fit-content;
+    height: auto;
+    padding: 10px;
+    background-color: rgb(0, 134, 151);
+    border-radius: 10px;
+    color: white;
+    border: none;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.151);
+}
+
+.btn:hover{
+    scale: 1.1;
+}
