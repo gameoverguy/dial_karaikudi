@@ -69,12 +69,13 @@
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
+    width: 120px;
 }
 
 .btn-submit {
     background-color: green;
     color: #fff;
-
+    margin-left: 120px;
 }
 
 .btn-close-popup {

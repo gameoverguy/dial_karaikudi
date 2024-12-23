@@ -79,7 +79,7 @@ function task_03(){
 
 async function dotasks(){
     await task_01().then((value) => {console.log(value)}).catch((e) => console.error(e));
-    await task_02().then((value) => {console.log(value)}).catch((e) => console.error(e));
+    await task_02().then((value) => {console.log(value)});
     await task_03().then((value) => {console.log(value)}).catch((e) => console.error(e));
     startcount();
 }
