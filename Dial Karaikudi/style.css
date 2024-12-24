@@ -15,13 +15,14 @@
     align-items: center;
     height: auto;
     transition: background-color 0.3s ease;
-    background-color: transparent;
+    /* background-color: rgba(255, 255, 255, 0.473); */
     z-index: 1000;
     padding: 20px 20px 10px 20px;
     /* box-shadow: 0px 4px 7px #00000071; */
+    /* backdrop-filter: blur(6px); */
 }
 
-img {
+.top_panel img {
     object-fit: contain;
     max-height: 84px;
 }
@@ -47,30 +48,25 @@ img {
 body {
     width: 100%;
     height: auto;
-    background-image: url(Images/bg5.jpeg);
-    /* background-image: linear-gradient(135deg, #ffffff, #ffcf77, #ffc04c); */ 
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
-
 }
 
 header{
-    height: 10vh;
+    height: auto;
     width: 100%;
 }
 
 main {
     width: 100%;
-    height: 84vh;
+    height: auto;
     display: flex;
-    justify-content: left;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    padding-bottom: 100px;
-    padding-left: 280px;
+    row-gap: 80px;
 }
 
 .mainbox{
@@ -78,37 +74,110 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 75%;
-    background: rgba(255, 255, 255, 0.096);
-    backdrop-filter: blur(10px);
+    width: 60%;
+    backdrop-filter: blur(6px);
+    border-radius: 1px;
+    padding: 80px 30px 80px 30px;
+    height: auto;
+    row-gap: 40px;
+    background-color: rgba(0, 0, 0, 0.096);
     border-radius: 20px;
-    padding: 30px;
 }
+
+.mainbox_middle{
+    display: flex;
+    column-gap: 100px;
+}
+
+/* .products_btn {
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: rgb(0, 60, 12);
+    border: none;
+    width: 240px;
+    height: 80px;
+    box-shadow: 0.1px 3px 2px 2px rgba(134, 65, 0, 0.37);
+} */
+
+.products_btn {
+    border: none;
+    background-color: transparent;
+}
+
+
+
+.services_btn {
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: rgb(128, 25, 0);
+    border: none;
+    width: 240px;
+    height: 80px;
+    /* box-shadow: 0.1px 3px 2px 2px rgba(134, 65, 0, 0.37); */
+}
+
+.products_btn:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: rgb(0, 100, 13);
+}
+
+.services_btn:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: rgb(190, 38, 0);
+}
+
+.products_btn:active {
+    box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.288) inset , -4px 3px 4px rgba(0, 0, 0, 0.288) inset ;
+  }
+
+  .services_btn:active {
+    box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.288) inset , -4px 3px 4px rgba(0, 0, 0, 0.288) inset ;
+  }
 
 
 .mainbox_top{
-
-    height: 20vh;
+    height: fit-content;
     width: fit-content;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    row-gap: 20px;
+}
 
+.mainbox_top p{
+    font-size: 1.4rem;
+    color: rgb(238, 238, 238);
+    font-family: "Oldenburg", serif;
+    text-align: center;
+    padding: 0 30px 0 30px;
 }
 
 .mainbox_bottom{
-
+    display: flex;
+    flex-direction: column;
     height: fit-content;
     text-align: center;
     align-items: center;
-    max-width: 720px;
-    padding: 20px 20px 20px 20px;
+    max-width: 800px;
+    padding: 5px;
+    row-gap: 30px;
 }
 
 .mainbox_bottom p{
     text-align: justify;
     text-justify: inter-word;
+    font-size: 1rem;
     color: rgb(255, 255, 255);
+    font-family: "Oldenburg", serif;
 }
 
 
@@ -124,73 +193,191 @@ main {
 
 .comingsoon{
     font-size: 5rem;
-    color: rgb(184, 0, 0);
+    color: rgb(255, 255, 255);
     font-weight: bold;
+    /* text-shadow: -1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000; */
+
 }
 
 .join_btn {
     color: #fff;
     font-size: 1.2rem;
-    padding: 10px 10px 10px 10px;
-    border-radius: 100px;
+    padding: 10px;
+    border-radius: 5px;
     font-weight: bold;
-    background-color: #ffa42c;
+    background-color: rgb(0, 116, 170);
     border: none;
     width: 160px;
     height: 50px;
-    box-shadow: 0.1px 3px 2px 2px rgba(134, 65, 0, 0.37);
+    /* box-shadow: 0.1px 3px 2px 2px rgba(134, 65, 0, 0.37); */
 }
 
 .join_btn:hover{
     transform: scale(1.1);
+    cursor: pointer;
+    background-color: rgb(0, 145, 212);
 }
+
+.join_btn:active {
+    box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.288) inset , -4px 3px 4px rgba(0, 0, 0, 0.288) inset ;
+  }
+
+
+
+.Content_01 {
+    backdrop-filter: blur(6px);
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 30px;
+}
+
+.Content_01 .founder_title{
+    font-family: "Oldenburg", serif;
+    font-size: 2rem;
+    color: white;
+}
+
+.Content_01 .founder_name{
+    font-family: "Oldenburg", serif;
+    font-size: 1.4rem;
+    color: white;
+}
+
+  .founder-container {
+    padding: 50px 0 50px 0;
+    display: flex;
+    justify-content: space-around;
+    column-gap: 40px;
+}
+
+  .founder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 30px;
+}
+
+.found {
+    object-fit: cover;
+    width: 225px;
+    height: 300px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.found:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+
+
 
 footer {
     width: 100%;
-    height: 6vh;
-    padding: 15px;
-
+    height: auto;
+    padding: 20px;
+    bottom: 0;
+    left: 0;
     display: flex;
     justify-content: center;
-    gap: 80px;
+    column-gap: 80px;
+    background-color: rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(6px);
 }
 
 .foot2{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20px;
 }
 
 .foot2 p{
-    color: brown;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-family: "Oldenburg", serif;
 }
 
 .foot1{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 10px;
 }
 
 .logos {
     padding-left: 10px;
     padding-right: 10px;
-    color: rgb(54, 54, 54);
+    color: rgb(255, 255, 255);
 }
 
 .logos:hover {
     transition: ease-in;
     font-size: xx-large;
+    cursor: pointer;
 }
 
 .location {
     padding-left: 10px;
     padding-right: 10px;
-    color: rgb(54, 54, 54);
+    color: rgb(185, 0, 0);
     transform: scale(2);
 }
 
 .location:hover {
     transition: ease-in;
     transform: scale(2.8);
+    cursor: pointer;
 }
 
+
+@keyframes fadeIn {
+    25%, 75% { opacity: 0; }
+    0%, 50%, 100% { opacity: 1; }
+}
+
+.animated-text {
+    animation: fadeIn 3s infinite ease-in-out;
+}
+
+.typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .05em solid orange;
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.5rem; /* Adjust as needed */
+    animation: 
+      typing 4s infinite steps(15, end),
+      blink-caret .75s step-end infinite;
+  }
+
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+
+.itim-regular {
+    font-family: "Itim", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+  .oldenburg-regular {
+    font-family: "Oldenburg", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
