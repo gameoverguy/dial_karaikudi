@@ -50,11 +50,11 @@ body {
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
 }
 
-header{
+header {
     height: auto;
     width: 100%;
 }
@@ -69,7 +69,7 @@ main {
     row-gap: 80px;
 }
 
-.mainbox{
+.mainbox {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,8 +84,10 @@ main {
     border-radius: 20px;
 }
 
-.mainbox_middle{
+.mainbox_middle {
     display: flex;
+    justify-content: center;
+    align-items: center;
     column-gap: 100px;
 }
 
@@ -105,11 +107,18 @@ main {
 .products_btn {
     border: none;
     background-color: transparent;
+    height: fit-content;
+}
+
+.products_btn img {
+    object-fit: contain;
+    width: 200px;
+    height: 200px;
 }
 
 
 
-.services_btn {
+/* .services_btn {
     color: #fff;
     font-size: 1.6rem;
     padding: 10px;
@@ -119,31 +128,41 @@ main {
     border: none;
     width: 240px;
     height: 80px;
-    /* box-shadow: 0.1px 3px 2px 2px rgba(134, 65, 0, 0.37); */
+    box-shadow: 0.1px 3px 2px 2px rgba(134, 65, 0, 0.37);
+} */
+
+.services_btn {
+    border: none;
+    background-color: transparent;
+    height: fit-content;
 }
 
-.products_btn:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-    background-color: rgb(0, 100, 13);
+.services_btn img {
+    object-fit: contain;
+    width: 200px;
+    height: 200px;
 }
 
-.services_btn:hover{
+.products_btn:hover {
     transform: scale(1.1);
     cursor: pointer;
-    background-color: rgb(190, 38, 0);
+}
+
+.services_btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .products_btn:active {
-    box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.288) inset , -4px 3px 4px rgba(0, 0, 0, 0.288) inset ;
-  }
+    box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.288) inset, -4px 3px 4px rgba(0, 0, 0, 0.288) inset;
+}
 
-  .services_btn:active {
-    box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.288) inset , -4px 3px 4px rgba(0, 0, 0, 0.288) inset ;
-  }
+.services_btn:active {
+    box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.288) inset, -4px 3px 4px rgba(0, 0, 0, 0.288) inset;
+}
 
 
-.mainbox_top{
+.mainbox_top {
     height: fit-content;
     width: fit-content;
     display: flex;
@@ -153,7 +172,7 @@ main {
     row-gap: 20px;
 }
 
-.mainbox_top p{
+.mainbox_top p {
     font-size: 1.4rem;
     color: rgb(238, 238, 238);
     font-family: "Oldenburg", serif;
@@ -161,7 +180,7 @@ main {
     padding: 0 30px 0 30px;
 }
 
-.mainbox_bottom{
+.mainbox_bottom {
     display: flex;
     flex-direction: column;
     height: fit-content;
@@ -172,7 +191,7 @@ main {
     row-gap: 30px;
 }
 
-.mainbox_bottom p{
+.mainbox_bottom p {
     text-align: justify;
     text-justify: inter-word;
     font-size: 1rem;
@@ -181,7 +200,7 @@ main {
 }
 
 
-.titlelogo_box{
+.titlelogo_box {
 
     display: flex;
     justify-content: center;
@@ -191,15 +210,10 @@ main {
 }
 
 
-.comingsoon{
+.comingsoon {
     font-size: 5rem;
     color: rgb(255, 255, 255);
     font-weight: bold;
-    /* text-shadow: -1px 1px 0 #000,
-    1px 1px 0 #000,
-    1px -1px 0 #000,
-    -1px -1px 0 #000; */
-
 }
 
 .join_btn {
@@ -215,15 +229,15 @@ main {
     /* box-shadow: 0.1px 3px 2px 2px rgba(134, 65, 0, 0.37); */
 }
 
-.join_btn:hover{
+.join_btn:hover {
     transform: scale(1.1);
     cursor: pointer;
     background-color: rgb(0, 145, 212);
 }
 
 .join_btn:active {
-    box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.288) inset , -4px 3px 4px rgba(0, 0, 0, 0.288) inset ;
-  }
+    box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.288) inset, -4px 3px 4px rgba(0, 0, 0, 0.288) inset;
+}
 
 
 
@@ -238,26 +252,26 @@ main {
     padding: 30px;
 }
 
-.Content_01 .founder_title{
+.Content_01 .founder_title {
     font-family: "Oldenburg", serif;
     font-size: 2rem;
     color: white;
 }
 
-.Content_01 .founder_name{
+.Content_01 .founder_name {
     font-family: "Oldenburg", serif;
     font-size: 1.4rem;
     color: white;
 }
 
-  .founder-container {
+.founder-container {
     padding: 50px 0 50px 0;
     display: flex;
     justify-content: space-around;
     column-gap: 40px;
 }
 
-  .founder {
+.founder {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -273,7 +287,7 @@ main {
     transition: 0.3s ease-in-out;
 }
 
-.found:hover{
+.found:hover {
     transform: scale(1.1);
     transition: 0.3s ease-in-out;
 }
@@ -294,20 +308,20 @@ footer {
     backdrop-filter: blur(6px);
 }
 
-.foot2{
+.foot2 {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
 
-.foot2 p{
+.foot2 p {
     color: rgb(255, 255, 255);
     font-size: 1.2rem;
     font-family: "Oldenburg", serif;
 }
 
-.foot1{
+.foot1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -341,8 +355,17 @@ footer {
 
 
 @keyframes fadeIn {
-    25%, 75% { opacity: 0; }
-    0%, 50%, 100% { opacity: 1; }
+
+    25%,
+    75% {
+        opacity: 0;
+    }
+
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
 }
 
 .animated-text {
@@ -350,34 +373,42 @@ footer {
 }
 
 .typewriter {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
     border-right: .05em solid orange;
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: 0.5rem; /* Adjust as needed */
-    animation: 
-      typing 4s infinite steps(15, end),
-      blink-caret .75s step-end infinite;
-  }
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.1rem;
+    /* Adjust as needed */
+    animation:
+        typing 4s infinite steps(50, end),
+        blink-caret .75s step-end infinite;
+}
 
 
 /* The typing effect */
 @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
 
 
 .itim-regular {
     font-family: "Itim", serif;
     font-weight: 400;
     font-style: normal;
-  }
-  
+}
 
-  .oldenburg-regular {
+
+.oldenburg-regular {
     font-family: "Oldenburg", serif;
     font-weight: 400;
     font-style: normal;
-  }
-  
+}
