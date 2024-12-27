@@ -1,16 +1,19 @@
 const menu = document.querySelector('.navbar');
+const menubutton = document.querySelector(".menu");
 let isMenuShowing = false;
 
 function Menu_Button() {
 
-    console.log("test");
+    const menulogo = menubutton.querySelector('img');
 
     if (isMenuShowing == false) {
         menu.classList.add("showMenu");
+        menulogo.classList.add("menulogo");
         isMenuShowing = true;
     }
     else {
         menu.classList.remove("showMenu");
+        menulogo.classList.remove("menulogo");
         isMenuShowing = false;
     }
 }

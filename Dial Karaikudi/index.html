@@ -19,8 +19,10 @@
 
 <body>
 
-    <img style="z-index: -100; position: fixed; object-fit: contain; width: 100%; transform: scaleX(-1);"
-        src="Images/bg6.jpg">
+    <div class="background_img">
+        <img src="Images/bg6.jpg">
+    </div>
+
 
     <header>
         <div class="top_panel">
@@ -29,13 +31,23 @@
 
             <div class="navbar">
 
-                <!-- <a href="#">
+                <a href="#">
                     <div class="nav_a">Home</div>
-                </a> -->
+                </a>
+                <a href="#">
+                    <div class="nav_a">Services</div>
+                </a>
+                <a href="#">
+                    <div class="nav_a">About</div>
+                </a>
+                <a href="#">
+                    <div class="nav_a">Contact Us</div>
+                </a>
 
             </div>
 
-        </div>
+            <span class="menu" onclick="Menu_Button()"><img src="Icons/menu.png"
+                    style="width: 40px; height: 40px;"></span>
     </header>
 
     <main>
@@ -46,21 +58,28 @@
 
                 <p>Boost your business through our Hyper-local Multi-vendor Multi-delivery e-Commerce platform.</p>
 
-                <div style="display: flex; justify-content: center; align-items: center; width: 85%;">
-
-                    <!-- <div class="titlelogo_box">
-                        <img src="/Images/logo_01.png">
-                    </div> -->
-
-                    <div class="comingsoon itim-regular typewriter">Launching Soon... </div>
-
-                </div>
+                <div class="comingsoon itim-regular typewriter">Launching Soon... </div>
 
             </div>
 
             <div class="mainbox_middle">
-                <button class="products_btn"><img src="./Images/p1.png"></button>
-                <button class="services_btn"><img src="./Images/s1.png"></button>
+
+                <button class="products_and_features_btn">
+                    <div class="products_and_features_logo">
+                        <img src="./Images/p1.png">
+                    </div>
+
+                    <p class="itim-regular" style="color: rgb(255, 255, 255);">Products</p>
+                </button>
+
+                <button class="products_and_features_btn">
+                    <div class="products_and_features_logo">
+                        <img src="./Images/s0.png">
+                    </div>
+
+                    <p class="itim-regular" style="color: rgb(255, 255, 255);">Services</p>
+                </button>
+
             </div>
 
             <div class="mainbox_bottom">
@@ -119,11 +138,13 @@
         </div>
 
         <div class="foot2">
+
             <a target=”_blank” href="https://maps.app.goo.gl/AkfMCk6z26WL3Fdv9"><i
                     class="fa-solid fa-location-dot fa-1 location"></i></a>
 
-            <p>No.7, Muthoorani East, Karaikudi - 630001. Landmark : Near New Cinema Theatre & Vidhya Giri School.
-                Contact : 99654 80680 / 99406 30680</p>
+            <p>No.7, Muthoorani East, Karaikudi - 630001.<br>Landmark : Near New Cinema Theatre & Vidhya Giri
+                School.<br>
+                Contact : 99654 80680</p>
 
         </div>
 
@@ -164,6 +185,8 @@
             overlay.classList.toggle('show');
         }
     </script>
+
+    <script type="text/javascript" src="index.js"></script>
 </body>
 
 </html>
