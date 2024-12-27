@@ -40,9 +40,18 @@
     animation: fadeInUp 0.5s ease-out forwards;
 }
 
+.form_top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
 .form-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .form-label {
@@ -69,24 +78,28 @@
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
-    width: 120px;
+    width: 60%;
+    height: fit-content;
+    font-size: large;
 }
 
 .btn-submit {
-    background-color: green;
+    background-color: rgb(0, 121, 0);
     color: #fff;
-    margin-left: 120px;
 }
 
 .btn-close-popup {
     margin-top: 12px;
-    background-color: #e74c3c;
+    background-color: #c01300;
     color: #fff;
 }
 
-.btn-submit:hover,
+.btn-submit:hover {
+    background-color: rgb(0, 167, 0);
+}
+
 .btn-close-popup:hover {
-    background-color: #4caf50;
+    background-color: rgb(233, 23, 0);
 }
 
 /* Keyframes for fadeInUp animation */
