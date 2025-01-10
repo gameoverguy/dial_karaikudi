@@ -1,122 +1,126 @@
 .btn-open-popup {
-    padding: 12px 24px;
-    font-size: 18px;
-    background-color: green;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: green;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .btn-open-popup:hover {
-    background-color: #4caf50;
+  background-color: #4caf50;
 }
 
 .overlay-container {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 2000;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2000;
 }
 
 .popup-box {
-    background: #fff;
-    padding: 24px;
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    width: 400px;
-    text-align: center;
-    opacity: 0;
-    transform: scale(0.8);
-    animation: fadeInUp 0.5s ease-out forwards;
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  width: 400px;
+  text-align: center;
+  opacity: 0;
+  transform: scale(0.8);
+  animation: fadeInUp 0.5s ease-out forwards;
 }
 
 .form_top {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
 }
 
 .form-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-label {
-    margin-bottom: 10px;
-    font-size: 16px;
-    color: #444;
-    text-align: left;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #444;
+  text-align: left;
+  font-family: "Oldenburg", serif;
+  font-weight: bold;
 }
 
 .form-input {
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 16px;
-    width: 100%;
-    box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Oldenburg", serif;
 }
 
 .btn-submit,
 .btn-close-popup {
-    padding: 12px 24px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    width: 60%;
-    height: fit-content;
-    font-size: large;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: 60%;
+  height: fit-content;
+  font-size: large;
+  font-family: "Oldenburg", serif;
 }
 
 .btn-submit {
-    background-color: rgb(0, 121, 0);
-    color: #fff;
+  background-color: rgb(0, 121, 0);
+  color: #fff;
 }
 
 .btn-close-popup {
-    margin-top: 12px;
-    background-color: #c01300;
-    color: #fff;
+  margin-top: 12px;
+  background-color: #c01300;
+  color: #fff;
 }
 
 .btn-submit:hover {
-    background-color: rgb(0, 167, 0);
+  background-color: rgb(0, 167, 0);
 }
 
 .btn-close-popup:hover {
-    background-color: rgb(233, 23, 0);
+  background-color: rgb(233, 23, 0);
 }
 
 /* Keyframes for fadeInUp animation */
 @keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Animation for popup */
 .overlay-container.show {
-    display: flex;
-    opacity: 1;
+  display: flex;
+  opacity: 1;
 }
