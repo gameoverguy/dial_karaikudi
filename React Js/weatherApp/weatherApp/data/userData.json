@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "id": "admin007",
+      "name": "admin",
+      "pass": "admin",
+      "mail": "admin@gmail.com",
+      "phone": "46595664895",
+      "disabled": true
+    },
+    {
+      "id": "18bc",
+      "name": "karthick",
+      "pass": "passpass",
+      "mail": "karthick@gmail.com",
+      "phone": "9043814241",
+      "disabled": true
+    },
+    {
+      "id": "48b1",
+      "name": "dfgdfg",
+      "pass": "@2wWgfggh",
+      "mail": "fdgdfg@df.c",
+      "phone": "4545",
+      "disabled": true
+    },
+    {
+      "id": "54cb",
+      "name": "sdfsdf007",
+      "pass": "a@1Asdf2",
+      "mail": "sefedsdf@sd.fg",
+      "phone": "1234567890",
+      "disabled": true
+    }
+  ]
+}
