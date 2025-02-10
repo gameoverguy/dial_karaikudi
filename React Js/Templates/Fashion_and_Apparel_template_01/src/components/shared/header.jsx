@@ -25,9 +25,9 @@ const Header = () => {
 
   return (
     <div className="sticky top-0 z-100 drop-shadow-lg">
-      <div className="md:px-16 bg-linear-to-r from-blue-700 to-teal-500 flex justify-between items-center h-20">
-        <span className="text-4xl text-white font-bold text-center mb-3 font-logo pl-4">
-          Digitaly
+      <div className="md:px-16 bg-linear-to-r flex justify-between items-center h-20">
+        <span className="text-4xl text-red-400 font-bold text-center mb-3 font-logo pl-4">
+          Digitaly Prints
         </span>
         {isOpen ? (
           <div
@@ -94,50 +94,47 @@ const Header = () => {
 export const MobileNavbar = ({ setIsOpen }) => {
   return (
     <ul className="absolute top-full w-full flex flex-col justify-evenly items-center bg-gray-800/95">
-      <Link
-        onClick={() => setIsOpen(false)}
-        to="/home"
-        className="flex justify-start items-center px-4 py-3 w-full hover:bg-blue-800 cursor-pointer "
-      >
-        <span className="text-gray-200 text-base">Home</span>
-      </Link>
-
-      <Link
-        onClick={() => setIsOpen(false)}
-        to="/about"
-        className="flex justify-start items-center px-4 py-3 w-full hover:bg-blue-800 cursor-pointer"
-      >
-        <span className="text-gray-200 text-base">About</span>
-      </Link>
-      <Link
-        onClick={() => setIsOpen(false)}
-        to="/templates"
-        className="flex justify-start items-center px-4 py-3 w-full hover:bg-blue-800 cursor-pointer"
-      >
-        <span className="text-gray-200 text-base">Website Templates</span>
-      </Link>
-      <Link
-        onClick={() => setIsOpen(false)}
-        to="/support"
-        className="flex justify-start items-center px-4 py-3 w-full hover:bg-blue-800 cursor-pointer"
-      >
-        <span className="text-gray-200 text-base">Support</span>
-      </Link>
-      <Link
-        onClick={() => setIsOpen(false)}
-        to="/pricing"
-        className="flex justify-start items-center px-4 py-3 w-full hover:bg-blue-800 cursor-pointer"
-      >
-        <span className="text-gray-200 text-base">Pricing</span>
-      </Link>
-      <Link
-        onClick={() => setIsOpen(false)}
-        to="/contactus"
-        className="flex justify-start items-center px-4 py-3 w-full hover:bg-blue-800 cursor-pointer"
-      >
-        <span className="text-gray-200 text-base">Contact</span>
-      </Link>
+      <NavLink label={"Home"} setIsOpen={setIsOpen} to={"/home"} mobile />
+      <NavLink label={"About"} setIsOpen={setIsOpen} to={"/about"} mobile />
+      <NavLink
+        label={"Templates"}
+        setIsOpen={setIsOpen}
+        to={"/templates"}
+        mobile
+      />
+      <NavLink label={"Support"} setIsOpen={setIsOpen} to={"/support"} mobile />
+      <NavLink label={"Pricing"} setIsOpen={setIsOpen} to={"/pricing"} mobile />
+      <NavLink label={"Contact"} setIsOpen={setIsOpen} to={"/contact"} mobile />
     </ul>
+  );
+};
+
+export const NavLink = ({ label, setIsOpen, to, mobile = false }) => {
+  const navbar = [
+    { name: "Home", path: "/home" },
+    { name: "All Products", path: "/allproducts" },
+    "All Products",
+    "T-Shirts",
+    "Jeans",
+    "Contact Us",
+    "About Digitaly",
+    "Login/SignUp",
+  ];
+  return mobile ? (
+    <Link
+      onClick={() => setIsOpen(false)}
+      to={to}
+      className="flex justify-start items-center px-4 py-3 w-full hover:bg-blue-800 cursor-pointer"
+    >
+      <span className="text-gray-200 text-base">{label}</span>
+    </Link>
+  ) : (
+    <Link
+      to={to}
+      className="font-logo px-4 py-3 text-gray-200 text-lg hover:bg-blue-800 rounded-lg cursor-pointer"
+    >
+      {label}
+    </Link>
   );
 };
 
