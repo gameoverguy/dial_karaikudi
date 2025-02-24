@@ -13,24 +13,24 @@ const About = () => {
         />
       </div>
 
-      <div className="flex flex-col justify-center items-center gap-8 py-24">
+      <div className="flex flex-col justify-center items-center gap-8 py-24 px-4 w-full">
         <div className="text-4xl text-blue-700">Our Great Team</div>
-        <div className="flex flex-col md:flex-row justify-center items-center gap-8">
-          <div className="w-8/12 md:w-3/12">
+        <div className="flex flex-col md:flex-row justify-center items-center md:gap-4 lg:gap-8 w-full">
+          <div className="w-8/12 md:w-4/12 lg:w-3/12">
             <Card_01
               image={"/images/1.png"}
               name={"Anna Salazar"}
               title={"Web Master"}
             />
           </div>
-          <div className="w-8/12 md:w-3/12">
+          <div className="w-8/12 md:w-4/12 lg:w-3/12">
             <Card_01
               image={"/images/2.png"}
               name={"Anna Salazar"}
               title={"Web Master"}
             />
           </div>
-          <div className="w-8/12 md:w-3/12">
+          <div className="w-8/12 md:w-4/12 lg:w-3/12">
             <Card_01
               image={"/images/3.png"}
               name={"Anna Salazar"}
@@ -51,36 +51,34 @@ const About = () => {
 
       <div className="flex flex-col justify-center items-center gap-24 py-12">
         <h1 className="text-3xl text-blue-800 font-bold">Testimonials</h1>
-        <div className="flex justify-center items-center gap-12 w-10/12 mx-auto">
-          <div className="flex flex-col justify-center items-center gap-6 w-6/12">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-12 w-10/12 mx-auto">
+          <div className="flex flex-col justify-center items-center gap-6 w-full md:w-6/12">
             <img className="h-36" src="/images/1.png" />
-            <p className="text-base text-gray-500 text-center">
-              “Proin gravida nibh vel velit auctor aliquet aenean lorem
-              sollicitudin, lorem quis bibendum auctor, nisi elit consequat
-              ipsum nec sagittis sem nibh id elit duis sed odio sit amet nibh
-              vulputate cursus a sit amet mauris.”
+            <p className="w-full text-base text-gray-500 text-center">
+              “Sit dolore non id ex velit dolore in pariatur aute nisi duis
+              culpa laborum irure culpa qui exercitation consequat
+              reprehenderit.”
             </p>
             <div>
               <h1 className="text-xl text-blue-800 text-center">
-                Margaret Phillips
+                exercitation sit
               </h1>
-              <p className="text-lg text-blue-800 text-center">Florist</p>
+              <p className="text-lg text-blue-800 text-center">Plumber</p>
             </div>
           </div>
 
-          <div className="flex flex-col justify-center items-center gap-6 w-6/12">
-            <img className="h-36" src="/images/2.png" />
-            <p className="text-base text-gray-500 text-center">
-              “Proin gravida nibh vel velit auctor aliquet aenean lorem
-              sollicitudin, lorem quis bibendum auctor, nisi elit consequat
-              ipsum nec sagittis sem nibh id elit duis sed odio sit amet nibh
-              vulputate cursus a sit amet mauris.”
+          <div className="flex flex-col justify-center items-center gap-6 w-full md:w-6/12">
+            <img className="h-36" src="/images/3.png" />
+            <p className="w-full text-base text-gray-500 text-center">
+              “Sit dolore non id ex velit dolore in pariatur aute nisi duis
+              culpa laborum irure culpa qui exercitation consequat
+              reprehenderit.”
             </p>
             <div>
               <h1 className="text-xl text-blue-800 text-center">
-                Lawrence Mendez
+                exercitation sit
               </h1>
-              <p className="text-lg text-blue-800 text-center">Designer</p>
+              <p className="text-lg text-blue-800 text-center">Engineer</p>
             </div>
           </div>
         </div>

@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Paprika&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-title: "Bruno Ace SC", serif;
+  --font-logo: "Agbalumo", serif;
+  --font-headingXXL: "Paprika", serif;
+}
+
+@layer components {
+  .navlink {
+    @apply bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-red-600 cursor-pointer;
+  }
+
+  .leftPanelLink {
+    @apply bg-gray-700 text-white break-words px-3 py-2 rounded-lg hover:cursor-pointer;
+  }
+}

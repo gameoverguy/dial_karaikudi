@@ -1,0 +1,63 @@
+npm create vite@latest
+
+provide app name
+
+npm install
+
+npm run dev
+
+delete assets
+clear app.css
+clear index.css
+
+remove unnecessarycode from app.jsx
+
+01
+
+npm install tailwindcss @tailwindcss/vite
+
+
+02
+Configure the Vite plugin (go to vite.config.ts)
+Add the @tailwindcss/vite plugin to your Vite configuration.
+import { defineConfig } from 'vite'
+import tailwindcss from '@tailwindcss/vite'
+export default defineConfig({
+  plugins: [
+    tailwindcss(),
+  ],
+})
+
+
+03
+Import Tailwind CSS
+Add an @import to your CSS file that imports Tailwind CSS.
+
+@import "tailwindcss";
+
+disable tailwind intellisense
+restart extensions
+enable tailwind intellisense
+
+04
+npm install react-icons --save
+
+05
+npm i react-router-dom
+
+06
+install git if unavailable
+git init
+git add . (add all files except git ignore)
+git commit -m "new"
+
+
+That's it Enjoy
+
+
+
+
+
+
+
+

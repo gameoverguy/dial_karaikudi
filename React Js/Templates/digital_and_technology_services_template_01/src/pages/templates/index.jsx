@@ -27,49 +27,49 @@ const Templates = () => {
         </div>
 
         <div className="mx-auto flex flex-wrap items-center justify-center gap-16">
-          <div className="w-3/12 flex flex-col gap-8 justify-center items-center">
+          <div className="w-10/12 md:w-3/12 flex flex-col gap-8 justify-center items-center">
             <img
               className="shadow-2xl transition delay-100 duration-400 ease-in-out hover:-translate-y-2 cursor-pointer"
               src="/images/agency.jpg"
             />
-            <p className="text-base text-gray-400 font-bold">Agency</p>
+            <p className="text-base text-gray-400 font-bold">Marketing</p>
           </div>
-          <div className="w-3/12 flex flex-col gap-8 justify-center items-center">
+          <div className="w-10/12 md:w-3/12 flex flex-col gap-8 justify-center items-center">
             <img
               className="shadow-2xl transition delay-100 duration-400 ease-in-out hover:-translate-y-2 cursor-pointer"
               src="/images/makeup-artist.jpg"
             />
-            <p className="text-base text-gray-400 font-bold">Make-up Artist</p>
+            <p className="text-base text-gray-400 font-bold">Artist</p>
           </div>
-          <div className="w-3/12 flex flex-col gap-8 justify-center items-center">
+          <div className="w-10/12 md:w-3/12 flex flex-col gap-8 justify-center items-center">
             <img
               className="shadow-2xl transition delay-100 duration-400 ease-in-out hover:-translate-y-2 cursor-pointer"
               src="/images/co-working-spaces.jpg"
             />
-            <p className="text-base text-gray-400 font-bold">
-              Co-Working Space
-            </p>
+            <p className="text-base text-gray-400 font-bold">Office Space</p>
           </div>
-          <div className="w-3/12 flex flex-col gap-8 justify-center items-center">
+          <div className="w-10/12 md:w-3/12 flex flex-col gap-8 justify-center items-center">
             <img
               className="shadow-2xl transition delay-100 duration-400 ease-in-out hover:-translate-y-2 cursor-pointer"
               src="/images/fitness-coach.jpg"
             />
-            <p className="text-base text-gray-400 font-bold">Fitness Trainer</p>
+            <p className="text-base text-gray-400 font-bold">
+              Fitness & Health
+            </p>
           </div>
-          <div className="w-3/12 flex flex-col gap-8 justify-center items-center">
+          <div className="w-10/12 md:w-3/12 flex flex-col gap-8 justify-center items-center">
             <img
               className="shadow-2xl transition delay-100 duration-400 ease-in-out hover:-translate-y-2 cursor-pointer"
               src="/images/official-dj.jpg"
             />
-            <p className="text-base text-gray-400 font-bold">DJ</p>
+            <p className="text-base text-gray-400 font-bold">Media</p>
           </div>
-          <div className="w-3/12 flex flex-col gap-8 justify-center items-center">
+          <div className="w-10/12 md:w-3/12 flex flex-col gap-8 justify-center items-center">
             <img
               className="shadow-2xl transition delay-100 duration-400 ease-in-out hover:-translate-y-2 cursor-pointer"
               src="/images/sally-mark-wedding.jpg"
             />
-            <p className="text-base text-gray-400 font-bold">Wedding</p>
+            <p className="text-base text-gray-400 font-bold">Event & Wedding</p>
           </div>
         </div>
 

@@ -43,10 +43,14 @@ const ContactUs = () => {
 
   const validateFields = (field, value) => {
     let newErrors = {
-      name: name ? errors.name : "This field is required",
-      email: email ? errors.email : "This field is required",
-      subject: subject ? errors.subject : "This field is required",
-      message: message ? errors.message : "This field is required",
+      // name: name ? errors.name : "This field is required",
+      // email: email ? errors.email : "This field is required",
+      // subject: subject ? errors.subject : "This field is required",
+      // message: message ? errors.message : "This field is required",
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
     };
 
     // Validate field-specific rules
@@ -237,7 +241,7 @@ const ContactUs = () => {
       ) : (
         <div
           ref={formRef}
-          className="text-xl text-green-600 text-center py-24 bg-green-300"
+          className="px-8 text-xl text-center text-green-600 py-16 bg-green-300"
         >
           Thanks for contacting us! We will be in touch with you shortly.
         </div>

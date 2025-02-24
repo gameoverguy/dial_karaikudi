@@ -24,66 +24,77 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="sticky top-0 z-100 drop-shadow-lg">
-      <div className="md:px-16 bg-linear-to-r from-blue-700 to-teal-500 flex justify-between items-center h-20">
-        <span className="text-4xl text-white font-bold text-center mb-3 font-logo pl-4">
-          Digitaly
-        </span>
-        {isOpen ? (
-          <div
-            onClick={() => handleMenu()}
-            className="block md:hidden text-4xl text-white pr-8 cursor-pointer"
-          >
-            <IoClose />
-          </div>
-        ) : (
-          <div
-            onClick={() => handleMenu()}
-            className="block md:hidden text-4xl text-white pr-8 cursor-pointer"
-          >
-            <IoMenu />
-          </div>
-        )}
+    <div className="sticky top-0 z-100 drop-shadow-lg w-full">
+      <div className="px-6 lg:px-16 bg-linear-to-r from-blue-700 to-teal-500 flex justify-between items-center h-20 w-full">
+        <Link to="/home">
+          <span className="text-4xl text-white font-bold text-center mb-3 font-logo">
+            Digitaly
+          </span>
+        </Link>
+
+        <div className="flex justify-center">
+          {isOpen ? (
+            <div
+              onClick={() => handleMenu()}
+              className="block md:hidden text-4xl text-white cursor-pointer"
+            >
+              <IoClose />
+            </div>
+          ) : (
+            <div
+              onClick={() => handleMenu()}
+              className="block md:hidden text-4xl text-white cursor-pointer"
+            >
+              <IoMenu />
+            </div>
+          )}
+        </div>
 
         {isOpen && <MobileNavbar setIsOpen={setIsOpen} />}
 
-        <ul className="hidden md:flex justify-evenly gap-2">
+        <ul className="hidden md:flex justify-between items-center gap-2">
           <Link
             to="/home"
-            className="font-logo px-4 py-3 text-gray-200 text-lg hover:bg-blue-800 rounded-lg cursor-pointer"
+            className="font-logo px-4 py-3 text-gray-200 text-sm lg:text-lg hover:bg-blue-800 rounded-lg cursor-pointer"
           >
             Home
           </Link>
 
           <Link
             to="/about"
-            className="font-logo px-4 py-3 text-gray-200 text-lg hover:bg-blue-800 rounded-lg cursor-pointer"
+            className="font-logo px-4 py-3 text-gray-200 text-sm lg:text-lg hover:bg-blue-800 rounded-lg cursor-pointer"
           >
             About us
           </Link>
           <Link
             to="/templates"
-            className="font-logo px-4 py-3 text-gray-200 text-lg hover:bg-blue-800 rounded-lg cursor-pointer"
+            className="font-logo px-4 py-3 text-gray-200 text-sm lg:text-lg hover:bg-blue-800 rounded-lg cursor-pointer"
           >
-            Website Templates
+            Templates
           </Link>
           <Link
             to="/support"
-            className="font-logo px-4 py-3 text-gray-200 text-lg hover:bg-blue-800 rounded-lg cursor-pointer"
+            className="font-logo px-4 py-3 text-gray-200 text-sm lg:text-lg hover:bg-blue-800 rounded-lg cursor-pointer"
           >
             Support
           </Link>
           <Link
             to="/pricing"
-            className="font-logo px-4 py-3 text-gray-200 text-lg hover:bg-blue-800 rounded-lg cursor-pointer"
+            className="font-logo px-4 py-3 text-gray-200 text-sm lg:text-lg hover:bg-blue-800 rounded-lg cursor-pointer"
           >
             Pricing
           </Link>
           <Link
             to="/contactus"
-            className="font-logo px-4 py-3 text-gray-200 text-lg hover:bg-blue-800 rounded-lg cursor-pointer"
+            className="font-logo px-4 py-3 text-gray-200 text-sm lg:text-lg hover:bg-blue-800 rounded-lg cursor-pointer"
           >
             Contact us
+          </Link>
+          <Link
+            to="/login"
+            className="font-logo px-4 py-3 bg-gray-500 text-gray-200 text-sm lg:text-lg hover:bg-red-800 rounded-lg cursor-pointer"
+          >
+            LogOut
           </Link>
         </ul>
       </div>
@@ -93,7 +104,7 @@ const Header = () => {
 
 export const MobileNavbar = ({ setIsOpen }) => {
   return (
-    <ul className="absolute top-full w-full flex flex-col justify-evenly items-center bg-gray-800/95">
+    <ul className="absolute left-0 top-full w-full flex flex-col justify-evenly items-center bg-gray-800/95">
       <Link
         onClick={() => setIsOpen(false)}
         to="/home"

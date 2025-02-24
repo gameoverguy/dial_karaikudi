@@ -16,8 +16,10 @@ const Pricing = () => {
         />
       </div>
 
-      <div className="flex flex-col gap-16 justify-center items-center py-16">
-        <div className="text-3xl text-blue-700">US $499 One Time Payment</div>
+      <div className="flex flex-col gap-16 justify-center items-center py-16 px-6">
+        <div className="text-3xl text-blue-700 text-center px-6">
+          US $499 One Time Payment
+        </div>
         <div className="flex flex-col md:flex-row gap-8 justify-center items-center">
           <div className="w-10/12 md:w-3/12 flex flex-col justify-center gap-8">
             <div className="flex flex-col gap-6">
@@ -84,7 +86,7 @@ const Pricing = () => {
       </div>
 
       <div className="flex flex-col gap-12 py-16 justify-center items-center">
-        <div className="text-4xl text-blue-800">
+        <div className="text-center text-3xl px-6 md:text-4xl text-blue-800">
           Also Get These for $39 / Month
         </div>
         <div className="flex flex-col md:flex-row gap-6 flex-wrap justify-center items-center">

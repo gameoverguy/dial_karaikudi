@@ -8,6 +8,8 @@ import Support from "./pages/support";
 import ContactUs from "./pages/contactUs";
 import Pricing from "./pages/pricing";
 import { ScrollToTop, ScrollToTopOnReload } from "./components/ScrollToTop";
+import Login from "./pages/login";
+import Signup from "./pages/signup";
 
 function App() {
   return (
@@ -17,7 +19,9 @@ function App() {
         <ScrollToTopOnReload />
         <Routes>
           <Route path="/" element={<MainLayout />}>
-            <Route index element={<Home />} />
+            <Route index element={<Login />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
             <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/templates" element={<Templates />} />

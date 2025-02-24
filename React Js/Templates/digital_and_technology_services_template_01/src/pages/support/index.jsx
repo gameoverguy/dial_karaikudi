@@ -16,11 +16,11 @@ const Support = () => {
         />
       </div>
 
-      <div className="flex flex-col gap-12 py-16 justify-center items-center">
+      <div className="flex flex-col gap-12 py-16 justify-center items-center w-full">
         <div className="px-8 text-4xl text-center text-blue-800">
           All the Support You will Ever Need
         </div>
-        <div className="flex flex-col md:flex-row gap-8">
+        <div className="flex flex-col flex-wrap md:flex-row md:justify-center gap-8 w-full">
           <div className="flex flex-col gap-4 justify-center items-center px-4 py-3 w-fit">
             <div className="text-4xl text-green-700">
               <DiAndroid />
